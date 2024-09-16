@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <title>Halaman Conatct</title>
-     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-     <h1>Halaman Contact</h1>
-     <a href="/">Home</a>
-     <a href="/conatct">Contact</a>
-     <a href="/about">About</a>
-     <a href="/blog">Blog</a>
-     <h2>Nama : {{ $name }}</h2>
-     <p>Instagram: <a href="https://www.instagram.com/muhammad_sofa" target="_blank">muhammad_sofa</a></p>
-</body>
-</html>
+<x-layout>
+     <x-slot:title>{{ $title }}</x-slot:title>
+     <h3 class="text-xl">Halaman Contact</h3>
+</x-layout>
