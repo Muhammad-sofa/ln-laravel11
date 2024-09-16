@@ -9,6 +9,10 @@
 </head>
 <body>
      <h1>Halaman Contact</h1>
+     <a href="/">Home</a>
+     <a href="/conatct">Contact</a>
+     <a href="/about">About</a>
+     <a href="/blog">Blog</a>
      <h2>Nama : {{ $name }}</h2>
      <p>Instagram: <a href="https://www.instagram.com/muhammad_sofa" target="_blank">muhammad_sofa</a></p>
 </body>
