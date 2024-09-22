@@ -11,7 +11,7 @@ class Post extends Model
 {
      //jika nama tablenya beda
      //protected $table = 'blog_post';
-     //jika id berbeda dan bukan id tapi post_id
+     //jika id berbeda dan bukan id tapi post_id 
      //protected $primaryKey = 'post_id';
      use HasFactory;
      protected $fillable = ['title', 'author', 'slug', 'body'];
@@ -19,5 +19,10 @@ class Post extends Model
      public function author(): BelongsTo
      {
           return $this->belongsTo(User::class);
+     }
+
+     public function category(): BelongsTo
+     {
+          return $this->belongsTo(Category::class);
      }
 }
