@@ -15,5 +15,4 @@
           </p>
           <a href="/posts" class="font-medium text-blue-500 hover:underline">&laquo; Back</a>
      </article>
-     
 </x-layout>
