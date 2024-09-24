@@ -34,5 +34,20 @@ class CategorySeeder extends Seeder
             'name' => 'Data Science',
             'slug' => 'data-science'
         ]);
+
+        Category::create([
+            'name' => 'Artificial Intelligence',
+            'slug' => 'artificial-intelligence'
+        ]);
+
+        Category::create([
+            'name' => 'Machine Learning',
+            'slug' => 'machine-learning'
+        ]);
+
+        Category::create([
+            'name' => 'Cyber Sucurity',
+            'slug' => 'cyber-security'
+        ]);
     }
 }
