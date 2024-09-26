@@ -15,13 +15,8 @@ Route::get('/about', function () {
 });
 
 Route::get('/posts', function () {
-    $posts = Post::latest();
 
-    if(request('search')) {
-        $posts->where('title', 'like', '%' . request('search') . '%');
-    };
-
-    return view('posts', ['title' => 'Blog', 'posts' => $posts->get()]);
+    return view('posts', ['title' => 'Blog', 'posts' => Post::filter(request(['search', 'category', 'author']))->latest()->get()]);
 });
 
 Route::get('/posts/{post:slug}', function (Post $post) {
